@@ -25,6 +25,7 @@ beRi "beri environments for R installations" is a package management system for 
 * https://github.com/tidyverse/hms and https://github.com/tidyverse/lubridate
 * https://github.com/tidyverse/glue
 * https://github.com/tidyverse/dplyr
+* https://github.com/kentonwhite/ProjectTemplate
 
   
 ## Ideas 
@@ -38,6 +39,13 @@ beRi "beri environments for R installations" is a package management system for 
   * Create repositories for each specific version of R (MAJOR.MAJOR.MINOR) (3.4.4).  This has already been accomplished with the [r_environment_repository](https://github.com/bioinformatics-collaborative/r_environments/tree/master/minor_local_libs).
   * For each seperate repository/version of R, install various versions of packages in their own seperate directories.
     * Utilize the .Renviron file to save the *:* delimeted PATH to specific package versions.  The new environment variable could be called __R_LOADED_PACKAGES__.
+
+### Side Goals
+
+1. Virtual Environments
+
+    * After figuring out the second goal it might be good to research how we could do virtual environments for R.  It could start with creating a packrat project.  And then we would have to create system links to folders and files.  This would have to be modeled after python's or condas virtual environment.
+    * https://realpython.com/python-virtual-environments-a-primer/
 
 ## Known R Dependencies
   * [devtools](https://github.com/r-lib/devtools)
