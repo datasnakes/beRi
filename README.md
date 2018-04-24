@@ -14,6 +14,19 @@ beRi "beri environments for R installations" is a package management system for 
   * https://csgillespie.github.io/efficientR/r-startup.html
   * https://www.r-bloggers.com/how-to-pimp-your-rprofile/
   
+## Other Potentially Useful Resources
+
+* https://github.com/HenrikBengtsson/startup
+* https://github.com/jdblischak/workflowr
+* https://rstudio.github.io/reticulate/
+* https://rpy2.github.io/doc/latest/html/index.html
+* https://github.com/trinker/pacman
+* https://github.com/talgalili/installr
+* https://github.com/tidyverse/hms and https://github.com/tidyverse/lubridate
+* https://github.com/tidyverse/glue
+* https://github.com/tidyverse/dplyr
+
+  
 ## Ideas 
 
 ### First Major and Easily Attainable Goal
@@ -22,16 +35,16 @@ beRi "beri environments for R installations" is a package management system for 
 
 ### Second Goal
 
-  * Create repositories for each specific version of R (MAJOR.MAJOR.MINOR) (3.4.4).  This has already been accomplished with the r_environment repository.
+  * Create repositories for each specific version of R (MAJOR.MAJOR.MINOR) (3.4.4).  This has already been accomplished with the [r_environment_repository](https://github.com/bioinformatics-collaborative/r_environments/tree/master/minor_local_libs).
   * For each seperate repository/version of R, install various versions of packages in their own seperate directories.
     * Utilize the .Renviron file to save the *:* delimeted PATH to specific package versions.  The new environment variable could be called __R_LOADED_PACKAGES__.
 
 ## Known R Dependencies
-  * devtools
-  * packrat
-  * miniCRAN
+  * [devtools](https://github.com/r-lib/devtools)
+  * [packrat](https://github.com/rstudio/packrat)
+  * [miniCRAN](https://github.com/andrie/miniCRAN)
 
 ## Known Python Dependencies
-  * click
-  * poetry
-  * PyYaml
+  * [click](https://github.com/pallets/click)
+  * [poetry](https://github.com/sdispater/poetry)
+  * [PyYaml](http://pyyaml.org/wiki/PyYAMLDocumentation)
