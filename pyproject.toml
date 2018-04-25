@@ -1,0 +1,11 @@
+[tool.poetry]
+name = "beri"
+version = "0.1.0"
+description = ""
+authors = ["RAG-home <rgilmore@umc.edu>"]
+
+[tool.poetry.dependencies]
+python = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.5"
