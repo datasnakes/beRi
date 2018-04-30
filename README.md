@@ -1,3 +1,5 @@
+[![Gitter chat](https://badges.gitter.im/CRANbeRi/Lobby.svg)](https://gitter.im/CRANbeRi/Lobby)
+
 # beRi
 beRi "beri environments for R installations" is a package management system for R.
 
