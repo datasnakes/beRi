@@ -1,5 +1,5 @@
 import click
-
+import rpy2
 
 @click.group()
 @click.option("--install", nargs=-1)

@@ -7,6 +7,7 @@ authors = ["RAG-home <rgilmore@umc.edu>"]
 [tool.poetry.dependencies]
 python = "*"
 click = "^6.7"
+rpy2 = "^2.9"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.5"

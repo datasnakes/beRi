@@ -58,7 +58,7 @@ description = "Implements a XML/HTML/XHTML Markup safe string for Python"
 category = "main"
 optional = false
 python-versions = "*"
-platform = "UNKNOWN"
+platform = "*"
 
 [[package]]
 name = "more-itertools"
