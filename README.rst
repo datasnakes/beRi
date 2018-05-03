@@ -86,7 +86,18 @@ Known Dependencies
 -  R
 
    -  `devtools`_
-   -  [packrat](https://githu
+   -  `packrat`_
+   -  `miniCRAN`_
 
-.. _r_environment_repository: https://github.com/bioinformatics-collaborative/r_environments/tree/master/minor_local_libs
+-  Python
+
+   -  `click`_
+   -  `poetry`_
+   -  `PyYaml`_
+
 .. _devtools: https://github.com/r-lib/devtools
+.. _packrat: https://github.com/rstudio/packrat
+.. _miniCRAN: https://github.com/andrie/miniCRAN
+.. _click: https://github.com/pallets/click
+.. _poetry: https://github.com/sdispater/poetry
+.. _PyYaml: http://pyyaml.org/wiki/PyYAMLDocumentation
