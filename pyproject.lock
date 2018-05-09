@@ -1,8 +1,69 @@
 [[package]]
+name = "arrow"
+version = "0.12.1"
+description = "Better dates and times for Python"
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[package.dependencies]
+python-dateutil = "*"
+"backports.functools_lru_cache" = ">= 1.2.1.0"
+[[package]]
 name = "attrs"
 version = "17.4.0"
 description = "Classes Without Boilerplate"
 category = "dev"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[[package]]
+name = "backports-functools-lru-cache"
+version = "1.5"
+description = "backports.functools_lru_cache"
+category = "main"
+optional = false
+python-versions = ">=2.6"
+platform = "*"
+
+[package.requirements]
+python = "~2.7"
+[[package]]
+name = "beautifulsoup4"
+version = "4.6.0"
+description = "Screen-scraping library"
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[[package]]
+name = "binaryornot"
+version = "0.4.4"
+description = "Ultra-lightweight pure Python package to check if a file is binary or text."
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[package.dependencies]
+chardet = ">= 3.0.2.0"
+[[package]]
+name = "certifi"
+version = "2018.4.16"
+description = "Python package for providing Mozilla's CA Bundle."
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[[package]]
+name = "chardet"
+version = "3.0.4"
+description = "Universal encoding detector for Python 2 and 3"
+category = "main"
 optional = false
 python-versions = "*"
 platform = "*"
@@ -28,6 +89,33 @@ platform = "*"
 [package.requirements]
 platform = "win32"
 [[package]]
+name = "cookiecutter"
+version = "1.6.0"
+description = "A command-line utility that creates projects from project templates, e.g. creating a Python package project from a Python package project template."
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[package.dependencies]
+future = ">= 0.15.2.0"
+binaryornot = ">= 0.2.0.0"
+jinja2 = ">= 2.7.0.0"
+click = ">= 5.0.0.0"
+whichcraft = ">= 0.4.0.0"
+poyo = ">= 0.1.0.0"
+jinja2-time = ">= 0.1.0.0"
+requests = ">= 2.18.0.0"
+[[package]]
+name = "docopt"
+version = "0.6.2"
+description = "Pythonic argument parser, that will make you smile"
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[[package]]
 name = "funcsigs"
 version = "1.0.2"
 description = "Python function signatures from PEP362 for Python 2.6, 2.7 and 3.2+"
@@ -41,6 +129,24 @@ ordereddict = "*"
 [package.requirements]
 python = "<3.0"
 [[package]]
+name = "future"
+version = "0.16.0"
+description = "Clean single-source support for Python 3 and 2"
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[[package]]
+name = "idna"
+version = "2.6"
+description = "Internationalized Domain Names in Applications (IDNA)"
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[[package]]
 name = "jinja2"
 version = "2.10"
 description = "A small but fast and easy to use stand-alone template engine written in pure python."
@@ -51,6 +157,31 @@ platform = "*"
 
 [package.dependencies]
 MarkupSafe = ">= 0.23.0.0"
+[[package]]
+name = "jinja2-time"
+version = "0.2.0"
+description = "Jinja2 Extension for Dates and Times"
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[package.dependencies]
+jinja2 = "*"
+arrow = "*"
+[[package]]
+name = "js2py"
+version = "0.59"
+description = "JavaScript to Python Translator & JavaScript interpreter written in 100% pure Python."
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[package.dependencies]
+tzlocal = ">= 1.2.0.0"
+six = ">= 1.10.0.0"
+pyjsparser = ">= 2.5.1.0"
 [[package]]
 name = "markupsafe"
 version = "1.0"
@@ -75,13 +206,59 @@ six = "< 2.0.0.0, >= 1.0.0.0"
 name = "ordereddict"
 version = "1.1"
 description = "A drop-in substitute for Py2.7's new collections.OrderedDict that works in Python 2.4-2.6."
-category = "dev"
+category = "main"
 optional = false
 python-versions = "*"
 platform = "UNKNOWN"
 
 [package.requirements]
 python = "<3.0"
+[[package]]
+name = "packaging"
+version = "17.1"
+description = "Core utilities for Python packages"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+platform = "*"
+
+[package.dependencies]
+pyparsing = ">= 2.0.2.0"
+six = "*"
+[[package]]
+name = "pipenv"
+version = "11.10.4"
+description = "Python Development Workflow for Humans."
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[package.dependencies]
+ordereddict = "*"
+requests = "*"
+virtualenv = "*"
+virtualenv-clone = ">= 0.2.5.0"
+setuptools = ">= 36.2.1.0"
+certifi = "*"
+pip = ">= 9.0.1.0"
+[[package]]
+name = "pipwin"
+version = "0.4.3"
+description = "pipwin installs compiled python binaries on windows provided by Christoph Gohlke"
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[package.dependencies]
+docopt = "*"
+requests = "*"
+robobrowser = "*"
+pyprind = "*"
+six = "*"
+js2py = "*"
+packaging = "*"
 [[package]]
 name = "pluggy"
 version = "0.6.0"
@@ -92,12 +269,48 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 platform = "*"
 
 [[package]]
+name = "poyo"
+version = "0.4.1"
+description = "A lightweight YAML Parser for Python"
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[[package]]
 name = "py"
 version = "1.5.3"
 description = "library with cross-python path, ini-parsing, io, code, log facilities"
 category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+platform = "*"
+
+[[package]]
+name = "pyjsparser"
+version = "2.5.2"
+description = "Fast javascript parser (based on esprima.js)"
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[[package]]
+name = "pyparsing"
+version = "2.2.0"
+description = "Python parsing module"
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[[package]]
+name = "pyprind"
+version = "2.11.2"
+description = "Python Progress Bar and Percent Indicator Utility"
+category = "main"
+optional = false
+python-versions = "*"
 platform = "*"
 
 [[package]]
@@ -119,6 +332,54 @@ setuptools = "*"
 six = ">= 1.10.0.0"
 py = ">= 1.5.0.0"
 [[package]]
+name = "python-dateutil"
+version = "2.7.2"
+description = "Extensions to the standard Python datetime module"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+platform = "*"
+
+[package.dependencies]
+six = ">= 1.5.0.0"
+[[package]]
+name = "pytz"
+version = "2018.4"
+description = "World timezone definitions, modern and historical"
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[[package]]
+name = "requests"
+version = "2.18.4"
+description = "Python HTTP for Humans."
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[package.dependencies]
+certifi = ">= 2017.4.17.0"
+chardet = ">= 3.0.2.0, < 3.1.0.0"
+idna = ">= 2.5.0.0, < 2.7.0.0"
+urllib3 = "< 1.23.0.0, >= 1.21.1.0"
+[[package]]
+name = "robobrowser"
+version = "0.5.3"
+description = "Your friendly neighborhood web scraper"
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[package.dependencies]
+beautifulsoup4 = ">= 4.3.2.0"
+requests = ">= 2.6.0.0"
+six = ">= 1.9.0.0"
+Werkzeug = ">= 0.10.4.0"
+[[package]]
 name = "rpy2"
 version = "2.9.3"
 description = "Python interface to the R language (embedded R)"
@@ -139,22 +400,117 @@ optional = false
 python-versions = "*"
 platform = "*"
 
+[[package]]
+name = "toml"
+version = "0.9.4"
+description = "Python Library for Tom's Obvious, Minimal Language"
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[[package]]
+name = "tzlocal"
+version = "1.5.1"
+description = "tzinfo object for the local timezone"
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[package.dependencies]
+pytz = "*"
+[[package]]
+name = "urllib3"
+version = "1.22"
+description = "HTTP library with thread-safe connection pooling, file post, and more."
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[[package]]
+name = "virtualenv"
+version = "15.2.0"
+description = "Virtual Python Environment builder"
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[[package]]
+name = "virtualenv-clone"
+version = "0.3.0"
+description = "script to clone virtualenvs."
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[[package]]
+name = "werkzeug"
+version = "0.14.1"
+description = "The comprehensive WSGI web application library."
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
+[[package]]
+name = "whichcraft"
+version = "0.4.1"
+description = "This package provides cross-platform cross-python shutil.which functionality."
+category = "main"
+optional = false
+python-versions = "*"
+platform = "*"
+
 [metadata]
 python-versions = "*"
 platform = "*"
-content-hash = "fedfe5a572aa0a38360c6f770f86e5273f1c600d16537f1fc0ff2947ff779132"
+content-hash = "2c083b6968c24304c3c8b19b067e0df6faf0b82a81f64ca6ec734ea63b2ccd98"
 
 [metadata.hashes]
+arrow = [ "a558d3b7b6ce7ffc74206a86c147052de23d3d4ef0e17c210dd478c53575c4cd",]
 attrs = [ "a17a9573a6f475c99b551c0e0a812707ddda1ec9653bed04c13841404ed6f450", "1c7960ccfd6a005cd9f7ba884e6316b5e430a3f1a6c37c5f87d8b43f83b54ec9",]
+backports-functools-lru-cache = [ "f0b0e4eba956de51238e17573b7087e852dfe9854afd2e9c873f73fc0ca0a6dd", "9d98697f088eb1b0fa451391f91afb5e3ebde16bbdb272819fd091151fda4f1a",]
+beautifulsoup4 = [ "7015e76bf32f1f574636c4288399a6de66ce08fb7b2457f628a8d70c0fbabb11", "11a9a27b7d3bddc6d86f59fb76afb70e921a25ac2d6cc55b40d072bd68435a76", "808b6ac932dccb0a4126558f7dfdcf41710dd44a4ef497a0bb59a77f9f078e89",]
+binaryornot = [ "b8b71173c917bddcd2c16070412e369c3ed7f0528926f70cac18a6c97fd563e4", "359501dfc9d40632edc9fac890e19542db1a287bbcfa58175b66658392018061",]
+certifi = [ "9fa520c1bacfb634fa7af20a76bcbd3d5fb390481724c597da32c719a7dca4b0", "13e698f54293db9f89122b0581843a782ad0934a4fe0172d2a980ba77fc61bb7",]
+chardet = [ "fc323ffcaeaed0e0a02bf4d117757b98aed530d9ed4531e3e15460124c106691", "84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae",]
 click = [ "29f99fc6125fbc931b758dc053b3114e55c77a6e4c6c3a2674a2dc986016381d", "f15516df478d5a56180fbf80e68f206010e6d160fc39fa508b65e035fd75130b",]
 colorama = [ "463f8483208e921368c9f306094eb6f725c6ca42b0f97e313cb5d5512459feda", "48eb22f4f8461b1df5734a074b57042430fb06e1d61bd1e11b078c0fe6d7a1f1",]
+cookiecutter = [ "ed8f54a8fc79b6864020d773ce11539b5f08e4617f353de1f22d23226f6a0d36", "1316a52e1c1f08db0c9efbf7d876dbc01463a74b155a0d83e722be88beda9a3e",]
+docopt = [ "49b3a825280bd66b3aa83585ef59c4a8c82f2c8a522dbe754a8bc8d08c85c491",]
 funcsigs = [ "330cc27ccbf7f1e992e69fef78261dc7c6569012cf397db8d3de0234e6c937ca", "a7bb0f2cf3a3fd1ab2732cb49eba4252c2af4240442415b4abce3b87022a8f50",]
+future = [ "e39ced1ab767b5936646cedba8bcce582398233d6a627067d4c6a454c90cfedb",]
+idna = [ "8c7309c718f94b3a625cb648ace320157ad16ff131ae0af362c9f21b80ef6ec4", "2c6a5de3089009e3da7c5dde64a141dbc8551d5b7f6cf4ed7c2568d0cc520a8f",]
 jinja2 = [ "74c935a1b8bb9a3947c50a54766a969d4846290e1e788ea44c1392163723c3bd", "f84be1bb0040caca4cea721fcbbbbd61f9be9464ca236387158b0feea01914a4",]
+jinja2-time = [ "d3eab6605e3ec8b7a0863df09cc1d23714908fa61aa6986a845c20ba488b4efa", "d14eaa4d315e7688daa4969f616f226614350c48730bfa1692d2caebd8c90d40",]
+js2py = [ "f4e344d0cc30c8f3e7c11033d4d6b7f57c2c9a27b263bebce392d58d23efbce4", "322709555aafc38773961ac3ce7cd606bd513d1389e78dcad73625e13025fb5a",]
 markupsafe = [ "a6be69091dac236ea9c6bc7d012beab42010fa914c459791d627dad4910eb665",]
 more-itertools = [ "11a625025954c20145b37ff6309cd54e39ca94f72f6bb9576d1195db6fa2442e", "0dd8f72eeab0d2c3bd489025bb2f6a1b8342f9b198f6fc37b52d15cfa4531fea", "c9ce7eccdcb901a2c75d326ea134e0886abfbea5f93e91cc95de9507c0816c44",]
 ordereddict = [ "1c35b4ac206cef2d24816c89f89cf289dd3d38cf7c449bb3fab7bf6d43f01b1f",]
+packaging = [ "e9215d2d2535d3ae866c3d6efc77d5b24a0192cce0ff20e42896cc0664f889c0", "f019b770dd64e585a99714f1fd5e01c7a8f11b45635aa953fd41c689a657375b",]
+pipenv = [ "8220d0e365eccf6b9fbd6925212f0c6949a4e9cc2e0c176a767bcb3f3d433d39", "b624be67e9e24063975bdf30f5386ce7d3c5ba938cb8cddc9bbbdecc488141f5", "986975edaad7bac821fc82426972ff6a8eb417387d0009dedb6cec8c1daca313",]
+pipwin = [ "56914d7cbef13f528fdc93189aae22510b64c205e1f25309bff66657c013f51f",]
 pluggy = [ "d345c8fe681115900d6da8d048ba67c25df42973bda370783cd58826442dcd7c", "e160a7fcf25762bb60efc7e171d4497ff1d8d2d75a3d0df7a21b76821ecbf5c5", "7f8ae7f5bdf75671a718d2daf0a64b7885f74510bcd98b1a0bb420eb9a9d0cff",]
+poyo = [ "230ec11c2f35a23410c1f0e474f09fa4e203686f40ab3adca7b039c845d8c325", "103b4ee3e1c7765098fe1cabe43f828db2e2a6079646561a2117e1a809f352d6",]
 py = [ "983f77f3331356039fdd792e9220b7b8ee1aa6bd2b25f567a963ff1de5a64f6a", "29c9fab495d7528e80ba1e343b958684f4ace687327e6f789a94bf3d1915f881",]
+pyjsparser = [ "e4a659df3db42a2ff9fbc961eb6d4076a0b945e1aadfc20d48f913ad5dca011d",]
+pyparsing = [ "fee43f17a9c4087e7ed1605bd6df994c6173c1e977d7ade7b651292fab2bd010", "0832bcf47acd283788593e7a0f542407bd9550a55a8a8435214a1960e04bcb04", "9e8143a3e15c13713506886badd96ca4b579a87fbdf49e550dbfc057d6cb218e", "281683241b25fe9b80ec9d66017485f6deff1af5cde372469134b56ca8447a07", "b8b3117ed9bdf45e14dcc89345ce638ec7e0e29b2b579fa1ecf32ce45ebac8a5", "8f1e18d3fd36c6795bb7e02a39fd05c611ffc2596c1e0d995d34d67630426c18", "e4d45427c6e20a59bf4f88c639dcc03ce30d193112047f94012102f235853a58",]
+pyprind = [ "20b64d7a6ff3039e1563e41b0658fd57a4499328419f6178899c83396c985c10", "c46cab453b805852853dfe29fd933aa88a2a516153909c695b098e9161a9e675",]
 pytest = [ "829230122facf05a5f81a6d4dfe6454a04978ea3746853b2b84567ecf8e5c526", "54713b26c97538db6ff0703a12b19aeaeb60b5e599de542e7fca0ec83b9038e8",]
+python-dateutil = [ "3220490fb9741e2342e1cf29a503394fdac874bc39568288717ee67047ff29df", "9d8074be4c993fbe4947878ce593052f71dac82932a677d49194d8ce9778002e",]
+pytz = [ "65ae0c8101309c45772196b21b74c46b2e5d11b6275c45d251b150d5da334555", "c06425302f2cf668f1bba7a0a03f3c1d34d4ebeef2c72003da308b3947c7f749",]
+requests = [ "6a1b267aa90cac58ac3a765d067950e7dbbf75b1da07e895d1f594193a40a38b", "9c443e7324ba5b85070c4a818ade28bfabedf16ea10206da1132edaa6dda237e",]
+robobrowser = [ "31219acab41ca68adce928e5c1e04acebba4ceabeb447b9c5e408d7b30fee983",]
 rpy2 = [ "1b72958e683339ea0c3bd9f73738e9ece2da8da8008a10e2e0c68fc7864e9361",]
 six = [ "832dc0e10feb1aa2c68dcc57dbb658f1c7e65b9b61af69048abc87a2db00a0eb", "70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9",]
+toml = [ "8e86bd6ce8cc11b9620cb637466453d94f5d57ad86f17e98a98d1f73e3baab2d",]
+tzlocal = [ "4ebeb848845ac898da6519b9b31879cf13b6626f7184c496037b818e238f2c4e",]
+urllib3 = [ "06330f386d6e4b195fbfc736b297f58c5a892e4440e54d294d7004e3a9bbea1b", "cc44da8e1145637334317feebd728bd869a35285b93cbb4cca2577da7e62db4f",]
+virtualenv = [ "e8e05d4714a1c51a2f5921e62f547fcb0f713ebbe959e0a7f585cc8bef71d11f", "1d7e241b431e7afce47e77f8843a276f652699d1fa4f93b9d8ce0076fd7b0b54",]
+virtualenv-clone = [ "4507071d81013fd03ea9930ec26bc8648b997927a11fa80e8ee81198b57e0ac7", "b5cfe535d14dc68dfc1d1bb4ac1209ea28235b91156e2bba8e250d291c3fb4f8",]
+werkzeug = [ "d5da73735293558eb1651ee2fddc4d0dedcfa06538b8813a2e20011583c9e49b", "c3fd7a7d41976d9f44db327260e263132466836cef6f91512889ed60ad26557c",]
+whichcraft = [ "cd0e10b58960ab877d9f273cd28788730936c3cdaceec2dafad97c7cf3067d46", "9e0d51c9387cb7e9f28b7edb549e6a03da758f7784f991eb4397d7f7808c57fd",]

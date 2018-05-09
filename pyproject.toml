@@ -8,6 +8,10 @@ authors = ["RAG-home <rgilmore@umc.edu>"]
 python = "*"
 click = "^6.7"
 rpy2 = "^2.9"
+cookiecutter = "^1.6"
+pipenv = "^11.10"
+pipwin = "^0.4.3"
+toml = "^0.9.4"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.5"
