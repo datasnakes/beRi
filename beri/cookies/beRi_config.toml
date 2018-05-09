@@ -13,6 +13,10 @@
     delete_user_libs = false # Delete the user library
     archive_user_libs = false # Archive the user library
 
+    [beri.default.variables]
+    windows_binaries = "https://cran.r-project.org/bin/windows/base/old/3.4.4/R-3.4.4-win.exe"
+    linux_source = "https://cloud.r-project.org/src/base/R-3/R-3.5.0.tar.gz"
+
 [[beri.dynamic]] # many of these variables rely on .Renviron style string formatting
     [beri.dynamic.environment]
     DEFAULT_LIBS = "~/R/%p-library/%V/" # R_LIBS_USER
