@@ -1,7 +1,9 @@
-[![Gitter chat](https://badges.gitter.im/CRANbeRi/Lobby.svg)](https://gitter.im/CRANbeRi/Lobby)
+[<img src="https://user-images.githubusercontent.com/20953530/43921054-48163858-9be0-11e8-8ddb-385e1cd9c056.jpg" align="right" width=500>](https://github.com/datasnakes/beRi)[![Gitter chat](https://badges.gitter.im/CRANbeRi/Lobby.svg)](https://gitter.im/CRANbeRi/Lobby) 
 
-# beRi
+# beRi 
+
 beRi "beri environments for R installations" is a package management system for R.
+
 
 
 ## Introduction
@@ -40,6 +42,7 @@ beRi "beri environments for R installations" is a package management system for 
 
   * Create repositories for each specific version of R (MAJOR.MAJOR.MINOR) (3.4.4).  This has already been accomplished with the [r_environment_repository](https://github.com/bioinformatics-collaborative/r_environments/tree/master/minor_local_libs).
   * For each seperate repository/version of R, install various versions of packages in their own seperate directories.
+  
     * Utilize the .Renviron file to save the *:* delimeted PATH to specific package versions.  The new environment variable could be called __R_LOADED_PACKAGES__.
 
 ### ~~Side Goals~~
