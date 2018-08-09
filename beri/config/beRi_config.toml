@@ -1,0 +1,24 @@
+[[beri.default]]
+    [beri.default.environment]
+    BERI_HOME = "~/.local/beRi" # top level directory
+    BERI_BIN = "~/.local/beRi/bin" # Bin for sym link executables
+
+    [beri.default.repository] # Install these into the
+    devtools="*"
+    packrat="*"
+    miniCRAN="*"
+
+    [beri.default.behavior]
+    default_libs = true # Install into DEFAULT_LIBS
+    delete_user_libs = false # Delete the user library
+    archive_user_libs = false # Archive the user library
+
+[[beri.dynamic]] # many of these variables rely on .Renviron style string formatting
+    [beri.dynamic.environment]
+    DEFAULT_LIBS = "~/R/%p-library/%V/" # R_LIBS_USER
+    R_BERI_LIBS = "~/.local/beRi/microsoft/%p-library/%V/libs" # --local for normal R
+    MR_BERI_LIBS = "~/.local/beRi/R/%p-library/%V/libs" # --local for Microsoft R Open
+    BERI_PROJECTS = "~/.local/beRi/R/%p-library/%V/projects"
+    BERI_REPOS = "~/.local/beRi/R/%p-library/%V/repos"
+    BERI_DEFAULT_REPO = "~/.local/beRi/R/%p-library/%V/repos/default" # A location for the default packages
+
