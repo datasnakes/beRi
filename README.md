@@ -34,7 +34,7 @@ View subproject level goals: https://github.com/datasnakes/renv/issues/23, https
 
 ## Dependencies
 
-*  R - [remotes](https://github.com/r-lib/remotes), [packrat](https://github.com/rstudio/packrat), [remotes](https://github.com/r-lib/remotes), [jetpack](https://github.com/datasnakes/jetpack)
+*  R - [remotes](https://github.com/r-lib/remotes), [packrat](https://github.com/rstudio/packrat), [jetpack](https://github.com/datasnakes/jetpack), [checkpoint](https://github.com/RevolutionAnalytics/checkpoint)
    
 * Python (3.6) - [click](https://github.com/pallets/click), [poetry](https://github.com/sdispater/poetry), [PyYaml](http://pyyaml.org/wiki/PyYAMLDocumentation)
 
