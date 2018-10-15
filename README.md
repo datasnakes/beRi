@@ -16,7 +16,7 @@ R has many issues that stem from a lack of having proper management tools such a
 
 In order to solve the above issues with R, we propose the beRi suite of tools for managing R. beRi is a set of Python packages which is composed of an R virtual environment manager ([renv](https://github.com/datasnakes/renv)), an R installation manager ([rinse](https://github.com/datasnakes/rinse)), and an R utility tool for installing packages, managing native R configuration files, and setting up local CRAN-like repositories ([rut](https://github.com/datasnakes/rut)). Since these packages/tools will be developed as standalone or fully independent CLI’s in separate repositories, beRi will integrate these packages and complement their functionalities in a separate CLI.
 
-# Project Goals
+## Project Goals
 
 - [ ] Develop standalone CLI's for renv, rut, and rinse using click
     - [ ] Build beRi CLI by grouping the standalone CLI.
