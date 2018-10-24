@@ -1,20 +1,20 @@
 <p align="center"><a href="https://www.getberi.site/"><img src="https://user-images.githubusercontent.com/20953530/43921054-48163858-9be0-11e8-8ddb-385e1cd9c056.jpg" width=450></a></p>
 
-<p align="center"><i>Are you a bioinformatician frustrated by R’s inability to resolve common dependency issues? Help develop <a href="https://github.com/datasnakes/beRi">beRi</a>, a package management, reproducible workflow, and installation toolkit for the R programming language.</i></p>
+<p align="center"><i>Are you a biologist or bioinformatician who desires to manage R environments, install R, and install R packages using the command line? Help develop <a href="https://github.com/datasnakes/beRi">beRi</a>! beRi is a suite of tools designed to make R analyses and projects more reproducible and easier to manage using the command line.</i></p>
 
 # beRi  [![Gitter chat](https://badges.gitter.im/CRANbeRi/Lobby.svg)](https://gitter.im/CRANbeRi/Lobby)
 
-beRi "beri environments for R installations" is a package management system for R. The project was initially conceptualized by [Robert Gilmore](https://github.com/grabear) with a little help from his colleague [Shaurita Hutchins](https://github.com/sdhutchins). Gilmore proposed the project to [hackseq18](https://www.hackseq.com/) where it was developed over 3 days by a great team of [developers](#hackseq18-team-members). It ultimately went on to win **favorite project** by the hackseq18 participants.
+beRi "beri environments for R installations" is an R environment, R installation, and R package management system for R. The project was initially conceptualized by [Robert Gilmore](https://github.com/grabear) with a little help from his colleague [Shaurita Hutchins](https://github.com/sdhutchins). Gilmore proposed the project to [hackseq18](https://www.hackseq.com/) where it was developed over 3 days by a great team of [developers](#hackseq18-team-members). It ultimately went on to win **favorite project** by the hackseq18 participants.
 
 <p align="center"><img src="https://i.imgur.com/tkZEmS8.png" width=450></p>
 
 ## Introduction
 
-R has many issues that stem from a lack of having proper management tools such as a project manager, a virtual environment manager, or a package manager. Many of the tools that are available are R packages, which makes it incredibly difficult to manage R from the command line. While Rstudio has developed a useful tool called packrat for managing projects, it still has performance issues including painfully long build times and poor integration with Bioconductor, one of the most widely used package repositories for R outside of CRAN. The task of building an R CLI is also a very daunting task even for advanced R users.
+For many Bioinformaticians who live on the command line, R currently lacks easy-to-use management tools such as a virtual environment manager, an R installer, or an R package manager. Many of the tools that are available are R packages which makes it more difficult to manage R and projects from the command line i.e. quick one-liners to create environments or install packages currently don't exist in a well-rounded package. While Rstudio has developed a useful tool called packrat for managing projects, it still has performance issues including long build times for larger projects and no current official support for Bioconductor, the most widely used package repository for Bioinformatics-related packages. The task of building an R CLI is also a daunting task even for advanced R users.
 
 ## beRi much better
 
-In order to solve the above issues with R, we propose the beRi suite of tools for managing R. beRi is a set of Python packages which is composed of an R virtual environment manager ([renv](https://github.com/datasnakes/renv)), an R installation manager ([rinse](https://github.com/datasnakes/rinse)), and an R utility tool for installing packages, managing native R configuration files, and setting up local CRAN-like repositories ([rut](https://github.com/datasnakes/rut)). Since these packages/tools will be developed as standalone or fully independent CLI’s in separate repositories, beRi will integrate these packages and complement their functionalities in a separate CLI.
+We propose the beRi suite of tools for managing R. beRi is a set of Python packages which is composed of an R virtual environment manager ([renv](https://github.com/datasnakes/renv)), an R installation manager ([rinse](https://github.com/datasnakes/rinse)), and an R utility tool for installing packages, managing native R configuration files, and setting up local CRAN-like repositories ([rut](https://github.com/datasnakes/rut)). Since these packages/tools will be developed as standalone or fully independent CLI’s in separate repositories, beRi will integrate these packages and complement their functionalities in a separate CLI.
 
 ## Project Goals
 
