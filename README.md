@@ -1,36 +1,22 @@
 <p align="center"><a href="https://www.getberi.site/"><img src="https://user-images.githubusercontent.com/20953530/43921054-48163858-9be0-11e8-8ddb-385e1cd9c056.jpg" width=450></a></p>
 
-<p align="center"><i>Are you a biologist or bioinformatician who desires to manage R environments, install R, and install R packages using the command line? Help develop <a href="https://github.com/datasnakes/beRi">beRi</a>! beRi is a suite of tools designed to make R analyses and projects more reproducible and easier to manage using the command line.</i></p>
+<p align="center"><i>Are you a  bioinformatician who desires to manage R environments, install R, and install R packages using the command-line? Help develop <a href="https://github.com/datasnakes/beRi">beRi</a>!</i></p>
 
 # beRi  [![Gitter chat](https://badges.gitter.im/CRANbeRi/Lobby.svg)](https://gitter.im/CRANbeRi/Lobby)
 
-beRi "beri environments for R installations" is an R environment, R installation, and R package management system for R. The project was initially conceptualized by [Robert Gilmore](https://github.com/grabear) with a little help from his colleague [Shaurita Hutchins](https://github.com/sdhutchins). Gilmore proposed the project to [hackseq18](https://www.hackseq.com/) where it was developed over 3 days by a great team of [developers](#hackseq18-team-members). It ultimately went on to win **favorite project** by the hackseq18 participants.
+beRi "beri environments for R installations" is an R environment, R installation, and R package management system for R. 
 
-<p align="center"><img src="https://i.imgur.com/tkZEmS8.png" width=450></p>
+The project was initially conceptualized by [Robert Gilmore](https://github.com/grabear). Gilmore proposed the project to [hackseq18](https://www.hackseq.com/) where it was developed over 3 days by a great team of [developers](#hackseq18-team-members). It ultimately went on to win hackseq18.
 
-## Introduction
+<p align="center"><a href="https://twitter.com/hackseq/status/1051628032228655104"><img src="https://i.imgur.com/tkZEmS8.png" width=450></a></p>
 
-For many Bioinformaticians who live on the command line, R currently lacks easy-to-use management tools such as a virtual environment manager, an R installer, or an R package manager. Many of the tools that are available are R packages which makes it more difficult to manage R and projects from the command line i.e. quick one-liners to create environments or install packages currently don't exist in a well-rounded package. While Rstudio has developed a useful tool called packrat for managing projects, it still has performance issues including long build times for larger projects and no current official support for Bioconductor, the most widely used package repository for Bioinformatics-related packages. The task of building an R CLI is also a daunting task even for advanced R users.
+## What is beRi?
 
-## beRi much better
+beRi is a suite of Python packages composed of the following components: (1) [renv](https://github.com/datasnakes/renv), a virtual environment manager for R; [rinse](https://github.com/datasnakes/rinse), an R installation and R version manager; and (3) [rut](https://github.com/datasnakes/rut), an R utility tool for installing packages, managing native R configuration files, and setting up local CRAN-like repositories. These packages will be developed in separate repositories as standalone command-line interfaces (CLIs). [beRi](https://github.com/datasnakes/beRi) will also be developed in a separate repository but will depend on the other three packages.
 
-We propose the beRi suite of tools for managing R. beRi is a set of Python packages which is composed of an R virtual environment manager ([renv](https://github.com/datasnakes/renv)), an R installation manager ([rinse](https://github.com/datasnakes/rinse)), and an R utility tool for installing packages, managing native R configuration files, and setting up local CRAN-like repositories ([rut](https://github.com/datasnakes/rut)). Since these packages/tools will be developed as standalone or fully independent CLI’s in separate repositories, beRi will integrate these packages and complement their functionalities in a separate CLI.
+## Why beRi
 
-## Project Goals
-
-- [ ] Develop standalone CLI's for renv, rut, and rinse using click
-    - [ ] Build beRi CLI by grouping the standalone CLI.
-    - [ ] Make sure the standalone CLI's can always be used with or without beRi.
-- [ ] Design a file-system for beRi in ~/.beRi or ~/.local/beRi with cookiecutter
-    - [ ]     R installs by default in .beRi file system
-    - [ ]     packages install by default to .beRi file system
-    - [ ]     projects are stored in .beRi file system
-    - [ ]     repos are stored in .beRi file system
-    - [ ]     beRi - configuration file (~/.beRi/<file_name>.yaml)
-- [ ] Develop initially for linux
-- [ ] Developing for user level workflows (no sudo/system)
-
-View subproject level goals: https://github.com/datasnakes/renv/issues/23, https://github.com/datasnakes/rut/issues/5, https://github.com/datasnakes/rinse/issues/3
+View our [isc proposal](https://github.com/datasnakes/beri-isc-proposal) to the R Consortium for beRi and learn more about why beRi is needed and how we plan to integrate it.
 
 ## Dependencies
 
@@ -51,7 +37,7 @@ View subproject level goals: https://github.com/datasnakes/renv/issues/23, https
 
 ## References
 
-In order to create something valuable to the R community including RStudio and the R maintainers, it is critical that we develop something that has credibility and creates reproducible environments. Below are some useful links and packages that have acted as a guide for helping to create this package:
+In order to create something valuable to the R community including RStudio and rOpenSci, it is critical that we develop something that has credibility and creates reproducible environments. Below are some useful links and packages that have acted as a guide for helping to create this package:
 
   * https://cran.r-project.org/web/packages/startup/vignettes/startup-intro.html
   * https://www.osc.edu/resources/getting_started/howto/howto_install_local_r_packages
