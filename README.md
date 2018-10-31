@@ -17,7 +17,7 @@ The project was initially conceptualized by [Robert Gilmore](https://github.com/
 
 beRi is a suite of Python packages composed of the following components: (1) [renv](https://github.com/datasnakes/renv), a virtual environment manager for R; [rinse](https://github.com/datasnakes/rinse), an R installation and R version manager; and (3) [rut](https://github.com/datasnakes/rut), an R utility tool for installing packages, managing native R configuration files, and setting up local CRAN-like repositories. These packages will be developed in separate repositories as standalone command-line interfaces (CLIs). [beRi](https://github.com/datasnakes/beRi) will also be developed in a separate repository but will depend on the other three packages.
 
-## Why beRi
+## Why beRi?
 
 View our [isc proposal](https://github.com/datasnakes/beri-isc-proposal) to the R Consortium for beRi and learn more about why beRi is needed and how we plan to integrate it.
 
@@ -29,12 +29,12 @@ View our [isc proposal](https://github.com/datasnakes/beri-isc-proposal) to the 
 
 ## hackseq18 team members
 
-* [Robert Gilmore](https://github.com/grabear) · **Team Lead**
+* [Robert Gilmore](https://github.com/grabear) · **hackseq18 Team Lead & Project Manager**
 * [Kristen Bystrom](https://github.com/ksbystrom)
-* [Bruno Grande](https://github.com/scientificbruno)
-* [Shaurita Hutchins](https://github.com/sdhutchins)
+* [Bruno Grande](https://github.com/scientificbruno) · **Lead Maintainer**
+* [Shaurita Hutchins](https://github.com/sdhutchins) · **Lead Maintainer**
 * [Michelle Lee](https://github.com/bitttyyyy)
-* [Santina Lin](https://github.com/santina)
+* [Santina Lin](https://github.com/santina) · **Lead Maintainer**
 * [Zhi Yuh Ou Yang](https://github.com/ZhiYuh)
 * [Hamid Younesy](https://github.com/hyounesy)
 
