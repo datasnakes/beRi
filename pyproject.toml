@@ -1,8 +1,11 @@
 [tool.poetry]
 name = "beri"
 version = "0.1.0"
-description = "beRi is a package manager for R."
-authors = ["Robert Gilmore <rgilmore@umc.edu>", "Shaurita Hutchins <sdhutchins@outlook.com>"]
+description = "beRi 'beri environments for R installations' is an R environment, R installation, and R package management system for R."
+authors = ["Robert Gilmore <rgilmore@umc.edu>",
+          "Shaurita Hutchins <sdhutchins@outlook.com>",
+          "Bruno Grande <bgrande@sfu.ca>",
+          "Santina Lin <hello@santina.me>"]
 license = "MIT"
 readme = "README.md"
 repository = "https://github.com/datasnakes/beRi"
@@ -10,7 +13,6 @@ repository = "https://github.com/datasnakes/beRi"
 [tool.poetry.dependencies]
 python = "*"
 click = "^6.7"
-rpy2 = "^2.9"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.5"

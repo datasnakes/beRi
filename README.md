@@ -9,6 +9,9 @@ beRi "beri environments for R installations" is an R environment, R installation
 The project was initially conceptualized by [Robert Gilmore](https://github.com/grabear). Gilmore proposed the project to [hackseq18](https://www.hackseq.com/) where it was developed over 3 days by a great team of [developers](#hackseq18-team-members). It ultimately went on to win hackseq18.
 
 <p align="center"><a href="https://twitter.com/hackseq/status/1051628032228655104"><img src="https://i.imgur.com/tkZEmS8.png" width=450></a></p>
+<br>
+<p align="center"><a href="https://hackseq.github.io/hs18/2018/08/12/README.txt.html"><img src="https://i.imgur.com/B9WCmSh.png" width=450></a></p>
+
 
 ## What is beRi?
 
