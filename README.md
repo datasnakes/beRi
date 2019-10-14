@@ -1,4 +1,4 @@
-<p align="center"><a href="https://www.getberi.site/"><img src="https://user-images.githubusercontent.com/20953530/43921054-48163858-9be0-11e8-8ddb-385e1cd9c056.jpg" width=450></a></p>
+<p align="center"><a href="https://www.datasnakes.org/get-beri/"><img src="https://user-images.githubusercontent.com/20953530/43921054-48163858-9be0-11e8-8ddb-385e1cd9c056.jpg" width=450></a></p>
 
 <p align="center"><i>Are you a  bioinformatician who desires to manage R environments, install R, and install R packages using the command-line? Help develop <a href="https://github.com/datasnakes/beRi">beRi</a>!</i></p>
 
