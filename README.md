@@ -1,40 +1,42 @@
 <p align="center"><a href="https://www.datasnakes.org/get-beri/"><img src="https://user-images.githubusercontent.com/20953530/43921054-48163858-9be0-11e8-8ddb-385e1cd9c056.jpg" width=450></a></p>
 
-<p align="center"><i>Are you a  bioinformatician who desires to manage R environments, install R, and install R packages using the command-line? Help develop <a href="https://github.com/datasnakes/beRi">beRi</a>!</i></p>
-
 # beRi  [![Gitter chat](https://badges.gitter.im/CRANbeRi/Lobby.svg)](https://gitter.im/CRANbeRi/Lobby)
 
 beRi "beri environments for R installations" is an R environment, R installation, and R package management system for R. 
 
-The project was initially conceptualized by [Robert Gilmore](https://github.com/grabear). Gilmore proposed the project to [hackseq18](https://www.hackseq.com/) where it was developed over 3 days by a great team of [developers](#hackseq18-team-members). It ultimately went on to win hackseq18.
-
+The project was initially conceptualized by [Robert Gilmore](https://github.com/grabear), and developed by a team at hackseq 2018 at UBC in Vancouver, BC.
+ 
 <p align="center"><a href="https://twitter.com/hackseq/status/1051628032228655104"><img src="https://i.imgur.com/tkZEmS8.png" width=450></a></p>
 <br>
 <p align="center"><a href="https://hackseq.github.io/hs18/2018/08/12/README.txt.html"><img src="https://i.imgur.com/B9WCmSh.png" width=450></a></p>
 
+## hackseq19
 
-## What is beRi?
+For hackseq19 we will be working towards making beRi cross compatible between operating systems.  Because beRi is composed of 3 separate python packages (rinse, renv, and rut), we will be focusing on 
+creating implementations for two of these packages while we are here.  By the end of the project we would like to be able to install renv and rinse on Linux, MacOS, and Windows.
+Please continue to the **hackseq19 README branches** for more information (see below).  You can also
+view our [isc proposal](https://github.com/datasnakes/beri-isc-proposal) to the R Consortium for a greater understanding of the project as a whole.
 
-beRi is a suite of Python packages composed of the following components: (1) [renv](https://github.com/datasnakes/renv), a virtual environment manager for R; [rinse](https://github.com/datasnakes/rinse), an R installation and R version manager; and (3) [rut](https://github.com/datasnakes/rut), an R utility tool for installing packages, managing native R configuration files, and setting up local CRAN-like repositories. These packages will be developed in separate repositories as standalone command-line interfaces (CLIs). [beRi](https://github.com/datasnakes/beRi) will also be developed in a separate repository but will depend on the other three packages.
+* renv - https://github.com/datasnakes/renv/tree/hs19-readme
+* rinse - https://github.com/datasnakes/rinse/tree/hackseq19-readme
 
-## Why beRi?
-
-View our [isc proposal](https://github.com/datasnakes/beri-isc-proposal) to the R Consortium for beRi and learn more about why beRi is needed and how we plan to integrate it.
-
-## Dependencies
-
-*  R - [remotes](https://github.com/r-lib/remotes), [packrat](https://github.com/rstudio/packrat), [jetpack](https://github.com/datasnakes/jetpack), [checkpoint](https://github.com/RevolutionAnalytics/checkpoint)
-   
+## Development Tools
+  
 * Python (3.6) - [click](https://github.com/pallets/click), [poetry](https://github.com/sdispater/poetry), [PyYaml](http://pyyaml.org/wiki/PyYAMLDocumentation)
+
+## hackseq19 team members
+
+* [Robert Gilmore](https://github.com/grabear) · **hackseq18 Team Lead & Project Manager**
+* [Shaurita Hutchins](https://github.com/sdhutchins) · **Lead Maintainer**
+* [Roshan Pawar](http://github.com/r614)
+* [Zongqi Wang](https://github.com/zongqi-wang)
 
 ## hackseq18 team members
 
-* [Robert Gilmore](https://github.com/grabear) · **hackseq18 Team Lead & Project Manager**
-* [Kristen Bystrom](https://github.com/ksbystrom)
 * [Bruno Grande](https://github.com/scientificbruno) · **Lead Maintainer**
-* [Shaurita Hutchins](https://github.com/sdhutchins) · **Lead Maintainer**
-* [Michelle Lee](https://github.com/bitttyyyy)
 * [Santina Lin](https://github.com/santina) · **Lead Maintainer**
+* [Kristen Bystrom](https://github.com/ksbystrom)
+* [Michelle Lee](https://github.com/bitttyyyy)
 * [Zhi Yuh Ou Yang](https://github.com/ZhiYuh)
 * [Hamid Younesy](https://github.com/hyounesy)
 
