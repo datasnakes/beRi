@@ -1,5 +1,11 @@
 <p align="center"><a href="https://www.datasnakes.org/get-beri/"><img src="https://user-images.githubusercontent.com/20953530/43921054-48163858-9be0-11e8-8ddb-385e1cd9c056.jpg" width=450></a></p>
 
+# Saturday 10-19 Status Report
+
+We are currently working hard to complete the Windows implementation of rinse.  It's almost ready to test.  The MacOS implementation
+goes beyond the scope of our abilities for this hackathon.  For renv we have made some great headway for MacOS, and for Windows we 
+have just made the first commit.  By tomorrow morning we should be in the testing/debugging stage for most of our software (excluding rinse for MacOS).
+
 # beRi  [![Gitter chat](https://badges.gitter.im/CRANbeRi/Lobby.svg)](https://gitter.im/CRANbeRi/Lobby)
 
 beRi "beri environments for R installations" is an R environment, R installation, and R package management system for R. 
