@@ -1,0 +1,16 @@
+language: python
+
+python:
+  - 3.5
+  - 3.6
+
+before_install:
+- pip install poetry nose
+
+# Install beri
+install:
+- poetry install -v
+
+# Command to run tests
+# nosetests is being used as a default
+script: nosetests tests/ --verbosity=3
